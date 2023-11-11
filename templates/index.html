@@ -1,0 +1,156 @@
+<html>
+<head>
+<style>
+body  {
+
+  background-image: url("{{url_for('static', filename='images/images (1).jpg')}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+     
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: -150px;
+            width: 60%;
+            text-align: center;
+			margin-left:300px;
+            
+        }
+
+
+        .details h2 {
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+      
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+
+        .upload {
+
+            font-size: 0px;
+            background-color: rgb(255, 252, 252);
+            height:50px ;
+            outline: none;
+            width: 350px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+            display:block;
+            border-radius:6px;
+            font-family: cursive;
+            box-shadow: 0 0 20px #4c1bd2;
+         }
+        .section {
+            align-items: center;
+        }
+        .upload::before {
+             content: "Upload";
+             position: absolute;
+             top: 40%;
+             left: 40%;
+            
+             font-size: 16px;
+             color: #000;
+}
+
+        ::-webkit-file-upload-button {
+            color: rgb(6, 5, 5);
+            padding: 20px;
+            width: 100px;
+            box-shadow: 0 0 8px #4c1bd2;
+            background:rgba(206, 194, 194, 0.703);
+            display:block;
+            border-radius:6px;
+            font-family: cursive;
+          
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 200px;
+            padding: 15px 35px;
+            color: black;
+            font-size: 1.5rem;
+            box-shadow: 0 0 8px #4c1bd2;
+            background:rgba(206, 194, 194, 0.703);
+            display:block;
+            border-radius:6px;
+            font-family: cursive;
+            
+        }
+</style>
+</head>
+<body background="{{url_for('static',filename = 'static\images\images (1).jpg')}}">
+	  <h1 style="text-align:center;font-size:4rem;color: white">IDENTIFYING THE THERAPEUTIC VALUE OF PLANT LEAVES</h1>
+    <section class="section">
+        
+        
+            
+            
+
+     
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading() ">
+
+                <input type="file" name="image" value="uplode" class="upload">
+				<br>
+				<br>
+                <br>
+				<br>
+                
+                <input type="submit" value="Predict">
+
+            </form>
+        </div>
+    </section>
+    
+
+</body>
+</html>

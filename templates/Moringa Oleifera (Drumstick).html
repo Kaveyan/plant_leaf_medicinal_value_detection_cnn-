@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>IDENTIFYING THE THERAPEUTIC VALUE OF PLANT LEAVES</title>
+
+    <style>
+         body  {
+
+background-image: url("{{url_for('static', filename='images/images.jpg')}}");
+background-repeat: no-repeat;
+ background-size: cover;
+}
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        .details{
+            width:90%;
+           margin:0 auto;
+            box-shadow: 0 0 10px #6c14d0;
+            border-radius: 5px;
+             text-align: center;
+             padding:10px 20px;
+              background:#f6f6f6;
+        }
+		
+    </style>
+</head>
+
+<body >
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">IDENTIFYING THE THERAPEUTIC VALUE OF PLANT LEAVES</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="static\images\Moringa Oleifera (Drumstick).jpg" alt="User Image" style="width:500px;height:500px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h4><b> MEDICINE VALUE : </b> </h4>
+                    <h6>
+                        Drumstick leaves are rich in antioxidants, such as vitamin C and beta-carotene, which protect us from many chronic 
+                        oxidative diseases, including heart diseases, diabetes, cancer, and 
+                        Alzheimer's disease. These leaves also contain Quercetin (an antioxidant) that 
+                        helps lower blood pressure.<br>
+                        Drumsticks contain powerful antioxidants and nutrients which are known to prevent cardiac complications, 
+                        heart ailments and even cut down the risk of cardiac problems if consumed regularly
+
+
+                    </h6>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Moringa_oleifera">For More Info</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
